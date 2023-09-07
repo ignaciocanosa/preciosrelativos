@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Precios Relativos</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <select id="urlSelect">
+        <option value="https://hereisdata.com/api/synthetic/list?dataId=9&fechaDesde=2016-12-31&fechaHasta=2023-09-13">¿Cuantos kilos de ternero vale un kilo de vaquillona?</option>
+        <option value="https://hereisdata.com/api/synthetic/list?dataId=11&fechaDesde=2016-12-31&fechaHasta=2023-09-13">¿Cuantos litros de leche vale un kilo de ternero?</option>
+    </select>  
+    
+    <div id="container">
+        <div id="graph-container">
+          <canvas id="miGrafico"></canvas>
+        </div>
+        <div id="stats-container">
+          <h3>Maximo: <span id="maximo"></span></h3>
+          <h3>Minimo: <span id="minimo"></span></h3>
+          <h3>Promedio: <span id="promedio"></span></h3>
+          <h3>Mediana: <span id="mediana"></span></h3>
+        </div>
+      </div>
+    <script src="script.js"></script>
+</body>
+</html> 
